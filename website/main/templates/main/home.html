@@ -1,15 +1,13 @@
 {% include 'main/navbar.html' %}
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;800&family=Montserrat:ital,wght@0,300;1,400&display=swap');
     .container {
+        font-family: "Montserrat", sans-serif;
         margin-left: 30px;
+        margin-bottom: 20px;
     }
 </style>
-
-<div class="container">
-    <h1>Transports</h1>
-
-</div>
 
 <div>
     <div>
@@ -17,7 +15,7 @@
             <h3>Bicycles</h3>
             {% for bicycle in bicycles %}
             <div>
-                <h4> id -> {{ bicycle.id }}  / Price -> {{ bicycle.price }}eur / Size -> {{ bicycle.size }}</h4>
+                <h4> · id vehicle -> {{ bicycle.id }} &nbsp / &nbsp Price -> {{ bicycle.price }}eur &nbsp / &nbsp Size -> {{ bicycle.size }}</h4>
             </div>
             {% endfor %}
         </div>
@@ -27,7 +25,7 @@
             <h3>Scooters</h3>
             {% for scooter in scooters %}
             <div>
-                <h4>id -> {{ scooter.id }} / Price -> {{ scooter.price }}eur / Range -> {{scooter.range}}km</h4>
+                <h4> · id vehicle -> {{ scooter.id }} &nbsp / &nbsp Price -> {{ scooter.price }}eur &nbsp / &nbsp Range -> {{scooter.range}}km</h4>
             </div>
 
             {% endfor %}
@@ -38,20 +36,43 @@
             <h3>Electric Scooter</h3>
             {% for electricScooter in electric_scooters %}
             <div>
-                <h4> id -> {{ electricScooter.id }} / Price -> {{ electricScooter.price }}eur / Range -> {{ electricScooter.range }}km</h4>
+                <h4> · id vehicle -> {{ electricScooter.id }} &nbsp / &nbsp Price -> {{ electricScooter.price }}eur &nbsp / &nbsp Range -> {{ electricScooter.range }}km</h4>
             </div>
 
             {% endfor %}
 
         </div>
 
+
+        <div class="container">
+            <h3>Users</h3>
+            {% for user in users %}
+            <div>
+                <h4> · Username -> {{ user.username }} &nbsp / &nbsp email -> {{ user.email }} &nbsp / &nbsp Is Active? -> {{ user.is_active }} &nbsp / &nbsp Last Login -> {{ user.last_login }} &nbsp / &nbsp Date Joined -> {{ user.date_joined }} &nbsp / &nbsp Is Super User? {{ user.is_superuser }}</h4>
+            </div>
+            {% endfor %}
+        </div>
+
+
         <div class="container">
             <h3>Routes</h3>
             {% for route in routes %}
             <div>
-                <h4> id -> {{ route.id }}  / Start Point -> {{ route.start_point }} / End Point -> {{ route.end_point }} / Start Time -> {{ route.start_time }} / Total Distance -> {{ route.km }}km </h4>
+                <h4> · id Vehicle -> {{ route.id }} &nbsp / &nbsp Start Point -> {{ route.start_point }} &nbsp / &nbsp End Point -> {{ route.end_point }} &nbsp / &nbsp Start Time -> {{ route.start_time }} &nbsp / &nbsp Total Distance -> {{ route.km }}km </h4>
             </div>
             {% endfor %}
+        </div>
+
+
+        <div class="container">
+            <h3>Record</h3>
+            {% for record in records %}
+            <div>
+                <h4> · User -> {{ record.user }} &nbsp / &nbsp id Route -> {{ record.route }} &nbsp / &nbsp Vehicle -> {{ record.vehicle }} &nbsp / &nbsp Final Time -> {{ record.final_time }} &nbsp / &nbsp Price -> {{ record.price }}eur </h4>
+            </div>
+
+            {% endfor %}
+
         </div>
 
     </div>

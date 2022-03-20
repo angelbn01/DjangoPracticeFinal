@@ -10,7 +10,9 @@ def home(request):
     scooters = Scooter.objects.all()
     electric_scooters = ElectricScooter.objects.all()
     routes = Route.objects.all()
-    return render(request, 'main/home.html', {'bicycles': bicycles, 'scooters': scooters, 'electric_scooters': electric_scooters, 'routes': routes})
+    records = Record.objects.all()
+    users = User.objects.all()
+    return render(request, 'main/home.html', {'bicycles': bicycles, 'scooters': scooters, 'electric_scooters': electric_scooters, 'routes': routes, 'records': records, 'users': users})
 
 
 def transports(request):
