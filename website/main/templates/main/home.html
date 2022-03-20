@@ -1,5 +1,11 @@
 {% include 'main/navbar.html' %}
 
+<style>
+    .container {
+        margin-left: 30px;
+    }
+</style>
+
 <div class="container">
     <h1>Transports</h1>
 
@@ -11,7 +17,7 @@
             <h3>Bicycles</h3>
             {% for bicycle in bicycles %}
             <div>
-                <h5>{{ bicycle.id }} -- {{ bicycle.price }}</h5>
+                <h4> id -> {{ bicycle.id }}  / Price -> {{ bicycle.price }}eur / Size -> {{ bicycle.size }}</h4>
             </div>
             {% endfor %}
         </div>
@@ -21,7 +27,7 @@
             <h3>Scooters</h3>
             {% for scooter in scooters %}
             <div>
-                <h5>{{ scooter.id }} -- {{ scooter.price }}</h5>
+                <h4>id -> {{ scooter.id }} / Price -> {{ scooter.price }}eur / Range -> {{scooter.range}}km</h4>
             </div>
 
             {% endfor %}
@@ -32,11 +38,20 @@
             <h3>Electric Scooter</h3>
             {% for electricScooter in electric_scooters %}
             <div>
-                <h5>{{ electricScooter.id }} -- {{ electricScooter.range }}</h5>
+                <h4> id -> {{ electricScooter.id }} / Price -> {{ electricScooter.price }}eur / Range -> {{ electricScooter.range }}km</h4>
             </div>
 
             {% endfor %}
 
+        </div>
+
+        <div class="container">
+            <h3>Routes</h3>
+            {% for route in routes %}
+            <div>
+                <h4> id -> {{ route.id }}  / Start Point -> {{ route.start_point }} / End Point -> {{ route.end_point }} / Start Time -> {{ route.start_time }} / Total Distance -> {{ route.km }}km </h4>
+            </div>
+            {% endfor %}
         </div>
 
     </div>
