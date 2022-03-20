@@ -1,0 +1,17 @@
+{% extends "register/base.html" %}
+{% block title %}Logged In{% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+{% if user.is_authenticated %}
+        <h1 class="mt-2">LoggedIn</h1>
+        <hr class="mt-0 mb-4">
+        <h1>You've successfully LOGGED IN</h1>
+        <a href="/"><button class="btn btn-success">Go Home</button></a>
+{% else %}
+        <h1 class="mt-2">You are not Logged In</h1>
+        <hr class="mt-0 mb-4">
+        <h1>You've to log in to access this website</h1>
+        <a href="/login/"><button class="btn btn-success">Log In</button></a>
+{% endif %}
+{% endblock %}

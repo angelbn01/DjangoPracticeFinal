@@ -1,0 +1,31 @@
+{% include 'main/navbar.html' %}
+
+<div class="container">
+    <h1>Transports</h1>
+
+</div>
+
+<div>
+    <div>
+        <div class="container">
+            <h2>Bicycles</h2>
+            {% for bicycle in bicycles %}
+            <div>
+                <h5>{{ bicycle.id }} -- {{ bicycle.price }}</h5>
+            </div>
+            {% endfor %}
+        </div>
+
+
+        <div class="container">
+            <h2>Scooters</h2>
+            {% for scooter in scooters %}
+            <div>
+                <h5>{{ scooter.id }} -- {{ scooter.price }}</h5>
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
