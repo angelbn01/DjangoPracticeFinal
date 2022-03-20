@@ -8,7 +8,7 @@
 <div>
     <div>
         <div class="container">
-            <h2>Bicycles</h2>
+            <h3>Bicycles</h3>
             {% for bicycle in bicycles %}
             <div>
                 <h5>{{ bicycle.id }} -- {{ bicycle.price }}</h5>
@@ -18,10 +18,21 @@
 
 
         <div class="container">
-            <h2>Scooters</h2>
+            <h3>Scooters</h3>
             {% for scooter in scooters %}
             <div>
                 <h5>{{ scooter.id }} -- {{ scooter.price }}</h5>
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+         <div class="container">
+            <h3>Electric Scooter</h3>
+            {% for electricScooter in electric_scooters %}
+            <div>
+                <h5>{{ electricScooter.id }} -- {{ electricScooter.range }}</h5>
             </div>
 
             {% endfor %}

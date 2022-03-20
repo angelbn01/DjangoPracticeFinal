@@ -8,7 +8,8 @@ from .models import *
 def home(request):
     bicycles = Bicycle.objects.all()
     scooters = Scooter.objects.all()
-    return render(request, 'main/home.html', {'bicycles': bicycles, 'scooters': scooters})
+    electric_scooters = ElectricScooter.objects.all()
+    return render(request, 'main/home.html', {'bicycles': bicycles, 'scooters': scooters, 'electric_scooters': electric_scooters})
 
 
 def transports(request):
