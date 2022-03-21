@@ -24,9 +24,10 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+# When the server is running:
+
 To access to the admin page, insert /admin/ at the url and insert the credentials:
 http://127.0.0.1:8000/admin/
-
 
 If you are a new user and you want to register: http://127.0.0.1:8000/register/
 
