@@ -26,3 +26,9 @@ python manage.py runserver
 
 To access to the admin page, insert /admin/ at the url and insert the credentials:
 http://127.0.0.1:8000/admin/
+
+
+If you are a new user and you want to register: http://127.0.0.1:8000/register/
+Once you are registered, you have to log in: http://127.0.0.1:8000/login/
+
+If you want to know the information of the database inserted by the admin: http://127.0.0.1:8000
