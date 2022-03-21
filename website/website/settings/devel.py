@@ -1,5 +1,6 @@
 from .settings import *
 
+DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -7,6 +8,5 @@ DATABASES = {
     }
 }
 
-DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
