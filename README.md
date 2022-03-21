@@ -17,8 +17,11 @@ Email address: admin@admin.com
 Password: admin
 Password(again): admin
 
+
+python manage.py makemigrations
+python manage.py migrate
 python manage.py runserver
 ```
 
-To access to the admin page, insert /admin/ at the url and insert the credentials.
+To access to the admin page, insert /admin/ at the url and insert the credentials:
 http://127.0.0.1:8000/admin/
