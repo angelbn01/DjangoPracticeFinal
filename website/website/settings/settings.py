@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
 
 
 
@@ -28,8 +27,7 @@ SECRET_KEY = 'django-insecure-i7e@%du&7p%q$txw!4lwcm)eg=-uc!i)ut@7zx^oe8-&&+vk4c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://limitless-atoll-80517.herokuapp.com/", "https://limitless-atoll-80517.herokuapp.com"]
-django_heroku.settings(locals())
+
 
 
 # Application definition
@@ -81,12 +79,7 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+
 
 
 # Password validation
