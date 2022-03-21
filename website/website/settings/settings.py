@@ -15,7 +15,6 @@ import django_heroku
 import os
 
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
@@ -27,7 +26,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = 'django-insecure-i7e@%du&7p%q$txw!4lwcm)eg=-uc!i)ut@7zx^oe8-&&+vk4c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 
 
@@ -120,7 +118,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR
-STATICFILES_DIRS = (os.path.join('static'),)
+STATICFILES_DIRS = (os.path.join('staticfiles'),)
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
@@ -132,5 +130,4 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 LOGIN_REDIRECT_URL = "/logged/"
 
-ALLOWED_HOSTS = ["https://limitless-atoll-80517.herokuapp.com/", "https://limitless-atoll-80517.herokuapp.com"]
 
