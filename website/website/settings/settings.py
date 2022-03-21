@@ -128,3 +128,5 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 LOGIN_REDIRECT_URL = "/logged/"
 
+ALLOWED_HOSTS = ["https://limitless-atoll-80517.herokuapp.com/", "https://limitless-atoll-80517.herokuapp.com"]
+
