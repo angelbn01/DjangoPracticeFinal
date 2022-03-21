@@ -7,10 +7,15 @@ Booking transports to move around the city.
 
 # Run locally
 
+To test the admin
+
 ```bash
+python manage.py createsuperuser
+
+Username: admin
+Email address: admin@admin.com
+Password: admin
+Password(again): admin
+
 python manage.py runserver
 ```
-
-To test the admin:
-- User: admin
-- Password: admin
