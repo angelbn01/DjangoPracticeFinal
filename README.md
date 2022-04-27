@@ -35,3 +35,5 @@ Once you are registered, you have to log in: http://127.0.0.1:8000/login/
 
 
 If you want to know the information of the database inserted by the admin: http://127.0.0.1:8000
+
+If you want to check the link of the project deployed in heroku: https://gentle-woodland-64586.herokuapp.com/
