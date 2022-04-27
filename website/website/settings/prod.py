@@ -1,18 +1,19 @@
 import os
-
+from .settings import *
 import django_heroku
 
-DEBUG = False
-ALLOWED_HOSTS = ["https://gentle-woodland-64586.herokuapp.com/", "https://gentle-woodland-64586.herokuapp.com"]
+DEBUG = True
+ALLOWED_HOSTS = ["gentle-woodland-64586.herokuapp.com"]
+CSRF_TRUSTED_ORIGINS = ["https://gentle-woodland-64586.herokuapp.com"]
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd7bocj9olvt1qb',
-        'HOST': 'ec2-54-226-18-238.compute-1.amazonaws.com',
-        'USER': 'dstedknvotyxzq',
-        'PASSWORD': '57a67724da5629ce2ff1813805f7d6427276ffff610e28bffc572d14b87ea2e9',
-        'PORT': 5432,
+        'NAME': os.environ.get("NAME_DB"),
+        'HOST': os.environ.get("HOST_DB"),
+        'USER': os.environ.get("USER_DB"),
+        'PASSWORD': os.environ.get("PASSWORD_DB"),
+        'PORT': '5432',
     }
 }
 django_heroku.settings(locals())
