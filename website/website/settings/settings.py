@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
     'register.apps.RegisterConfig',
-    'crispy_forms'
+    'crispy_forms',
+    'behave_django',
+    #potser falta myrestaurant
 ]
 
 MIDDLEWARE = [
@@ -126,6 +128,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
-LOGIN_REDIRECT_URL = "/logged/"
+#LOGIN_REDIRECT_URL = "/logged/"
 
 
