@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from django.utils.decorators import method_decorator
+from django.contrib.auth.decorators import login_required
+from django.views.generic.edit import CreateView, UpdateView
+from . import forms
 
 from .models import *
 
@@ -17,3 +21,19 @@ def home(request):
 
 def transports(request):
     return render(request, 'main/home.html')
+
+
+class LoginRequiredMixin(object):
+    @method_decorator(login_required())
+    def dispatch(self, *args, **kwargs):
+        return super(LoginRequiredMixin, self).dispatch(*args, **kwargs)
+
+
+class RouteCreate(LoginRequiredMixin, CreateView):
+    model = Route
+    template_name = 'main/form.html'
+    form_class = forms.RouteForm
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super(RouteCreate, self).form_valid(form)

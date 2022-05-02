@@ -43,11 +43,13 @@ class Route(Model):
     end_point = models.CharField(max_length=20, choices=PLACES)
     start_time = models.DateTimeField()
     km = models.IntegerField()
+    user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)
 
 
 class MyUser(User):
     vehicle = models.ForeignKey(Transport, on_delete=models.CASCADE, blank=True)
-    route = models.ForeignKey(Route, on_delete=models.CASCADE, blank=True)
+    #route = models.ForeignKey(Route, on_delete=models.CASCADE, blank=True)
+
 
 
 class Record(Model):

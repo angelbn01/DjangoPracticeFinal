@@ -26,7 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../myrecommendations-main" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -60,6 +60,10 @@
       <workItem from="1648461042478" duration="1674000" />
       <workItem from="1650962938761" duration="25000" />
       <workItem from="1651062786543" duration="888000" />
+      <workItem from="1651064412206" duration="3762000" />
+      <workItem from="1651070210163" duration="252000" />
+      <workItem from="1651482991831" duration="541000" />
+      <workItem from="1651486053869" duration="2461000" />
     </task>
     <servers />
   </component>
