@@ -45,11 +45,13 @@
       <div>
           <h3>Your Routes</h3>
           {% for route in routes %}
-              {% if user == user.route %}
+          <div>
+              {% if user == route.user %}
                 <div>
-                   <h4> · id Vehicle -> {{ route.id }} &nbsp / &nbsp Start Point -> {{ route.start_point }} &nbsp / &nbsp End Point -> {{ route.end_point }} &nbsp / &nbsp Start Time -> {{ route.start_time }} &nbsp / / &nbsp User -> {{ route.user_id }} &nbsp / &nbsp Total Distance -> {{ route.km }}km </h4>
+                   <h4> · id Vehicle -> {{ route.id }} &nbsp / &nbsp Start Point -> {{ route.start_point }} &nbsp / &nbsp End Point -> {{ route.end_point }} &nbsp / &nbsp Start Time -> {{ route.start_time }} &nbsp / &nbsp Total Distance -> {{ route.km }}km </h4>
                 </div>
               {% endif %}
+          </div>
           {% endfor %}
           <!--AQUI ANIRA EL BUCLE PER PRINTEJAR TOTES LES ROUTES-->
         <a class="cta" href="/create/">
