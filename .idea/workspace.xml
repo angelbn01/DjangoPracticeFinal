@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983b2538-bf1a-44e4-919a-20ddc0fd3cdf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PracticaDjangoBONA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PracticaDjangoBONA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/website/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/main/templates/main/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/templates/main/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/main/templates/main/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/templates/main/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/main/templates/main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/templates/main/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,6 +43,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />

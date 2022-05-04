@@ -18,6 +18,8 @@ def home(request):
     users = User.objects.all()
     return render(request, 'main/home.html', {'bicycles': bicycles, 'scooters': scooters, 'electric_scooters': electric_scooters, 'routes': routes, 'records': records, 'users': users})
 
+def homeRegistered(request):
+    return render(request, 'main/home_registered.html')
 
 def transports(request):
     return render(request, 'main/home.html')
