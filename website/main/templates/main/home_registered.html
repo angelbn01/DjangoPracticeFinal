@@ -7,6 +7,9 @@
         margin-left: 30px;
         margin-bottom: 20px;
     }
+    .button{
+        margin-top: 15px;
+    }
 </style>
 
 <div>
@@ -42,8 +45,9 @@
             {% endfor %}
          </div>
 
-      <div>
+      <div class="container">
           <h3>Your Routes</h3>
+          <h4>El usuari connectat es --> {{ user.username }}</h4>
           {% for route in routes %}
           <div>
               {% if user == route.user %}
@@ -55,7 +59,7 @@
           {% endfor %}
           <!--AQUI ANIRA EL BUCLE PER PRINTEJAR TOTES LES ROUTES-->
         <a class="cta" href="/create/">
-            <button>Create New Route</button>
+            <button class="button">Create New Route</button>
         </a>
 
       </div>
