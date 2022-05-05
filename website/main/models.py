@@ -48,7 +48,7 @@ class Route(Model):
     user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)
 
     def get_absolute_url(self):
-        return '/homeregistered/'
+        return '/home/'
 
 class MyUser(User):
     vehicle = models.ForeignKey(Transport, on_delete=models.CASCADE, blank=True)

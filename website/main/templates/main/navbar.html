@@ -69,11 +69,7 @@
 <body>
 <header>
     <div class="hometitle">
-        {% if user.is_authenticated %}
-            <h1><a href="/homeregistered/"></a> HOME</h1>
-        {% else %}
-            <h1><a href="#"></a> HOME</h1>
-        {% endif %}
+        <a href="/home/"><h1>HOME</h1></a>
     </div>
     <nav>
         <ul class="nav_links">

@@ -1,19 +1,29 @@
-{% extends "main/navbar.html" %}
-{% load static %}
+{% include "main/navbar.html" %}
 
-{% block content %}
-    <h4>Crete New Route</h4>
-    <form method="post" enctype="multipart/form-data" action="">
-        {% csrf_token %}
-        <table>
-            {{ form.as_table }}
-        </table>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;800&family=Montserrat:ital,wght@0,300;1,400&display=swap');
+    .container {
+        font-family: "Montserrat", sans-serif;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    .button{
+        margin-top: 15px;
+    }
+</style>
 
-        <input type="submit" value="Submit"/>
-    </form>
+    <div class="container">
+        <h4>Crete New Route</h4>
+        <form method="post" enctype="multipart/form-data" action="">
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
 
-    <a class="cta" href="/homeregistered/">
-            <button class="button">Back Home</button>
-    </a>
+            <input type="submit" value="Submit"/>
+        </form>
 
-{% endblock %}
+        <a class="cta" href="/home/">
+                <button class="button">Back Home</button>
+        </a>
+    </div>
