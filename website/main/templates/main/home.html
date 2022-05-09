@@ -10,6 +10,9 @@
     .button{
         margin-top: 15px;
     }
+    .edit-button{
+        color: blue;
+    }
 </style>
 
 <div>
@@ -54,7 +57,7 @@
                   <div>
                       {% if user == route.user %}
                         <div>
-                           <h4> · id Vehicle -> {{ route.id }} &nbsp / &nbsp Start Point -> {{ route.start_point }} &nbsp / &nbsp End Point -> {{ route.end_point }} &nbsp / &nbsp Start Time -> {{ route.start_time }} &nbsp / &nbsp Total Distance -> {{ route.km }}km </h4>
+                           <h4> · id Vehicle -> {{ route.id }} &nbsp / &nbsp Start Point -> {{ route.start_point }} &nbsp / &nbsp End Point -> {{ route.end_point }} &nbsp / &nbsp Start Time -> {{ route.start_time }} &nbsp / &nbsp Total Distance -> {{ route.km }}km (<a class="edit-button" href="{% url 'main:route_edit' route.id %}">edit</a>) </h4>
                         </div>
                       {% endif %}
                   </div>
