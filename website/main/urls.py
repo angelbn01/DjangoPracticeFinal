@@ -2,6 +2,7 @@ from django.urls import path
 from django.views.generic import RedirectView
 
 from . import views
+
 from .views import RouteDetail
 
 app_name = 'main'

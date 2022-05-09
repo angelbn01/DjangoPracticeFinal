@@ -4,10 +4,9 @@
     <list default="true" id="983b2538-bf1a-44e4-919a-20ddc0fd3cdf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/website/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/main/templates/main/home_registered.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/templates/main/home_registered.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/main/templates/main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/templates/main/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/register/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/register/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/register/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/register/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../myrecommendations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -86,6 +85,7 @@
       <workItem from="1651486053869" duration="2461000" />
       <workItem from="1651741224020" duration="177000" />
       <workItem from="1651747604743" duration="2894000" />
+      <workItem from="1652089461815" duration="2820000" />
     </task>
     <servers />
   </component>
