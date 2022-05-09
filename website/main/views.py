@@ -1,7 +1,10 @@
-from django.shortcuts import render
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404
+from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic import DetailView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from . import forms
 
 from .models import *
@@ -36,3 +39,17 @@ class RouteCreate(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(RouteCreate, self).form_valid(form)
+
+
+class RouteDetail(DetailView):
+    model = Route
+    template_name = 'main/route_detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(RouteDetail, self).get_context_data(**kwargs)
+        return context
+
+
+class RouteDelete(DeleteView):
+    model = Route
+    success_url = reverse_lazy('main:home')

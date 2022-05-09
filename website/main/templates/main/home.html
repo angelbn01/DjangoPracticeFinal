@@ -53,9 +53,8 @@
                   {% for route in routes %}
                   <div>
                       {% if user == route.user %}
-                        <div>
-                           <h4> · id Vehicle -> {{ route.id }} &nbsp / &nbsp Start Point -> {{ route.start_point }} &nbsp / &nbsp End Point -> {{ route.end_point }} &nbsp / &nbsp Start Time -> {{ route.start_time }} &nbsp / &nbsp Total Distance -> {{ route.km }}km </h4>
-                        </div>
+                        <li><a href="{% url 'main:route_detail' route.id %}">
+                            {{ route.id }}</a></li>
                       {% endif %}
                   </div>
                   {% endfor %}

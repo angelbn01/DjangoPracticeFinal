@@ -1,0 +1,22 @@
+{% extends "main/navbar.html" %}
+{% block title %}MyRoutes - {{ route.id }}{% endblock %}
+{% block content %}
+
+<span vocab="http://schema.org/" typeof="Route">
+
+<h3>&nbsp Id Route:</h3>
+<h4>&nbsp {{ route.id }}</h4>
+<h3>&nbsp Start Point:</h3>
+<h4>&nbsp {{ route.start_point }}</h4>
+<h3>&nbsp End Point:</h3>
+<h4>&nbsp {{ route.end_point }}</h4>
+<h3>&nbsp Start Time:</h3>
+<h4>&nbsp {{ route.start_time }}</h4>
+<h3>&nbsp Total Distance:</h3>
+<h4>&nbsp {{ route.km }}</h4>
+</span>
+<a class="cta" href="{% url 'main:route_delete' route.id %}">
+    <button class="button">DELETE</button>
+</a>
+{% endblock %}
+
