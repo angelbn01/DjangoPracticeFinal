@@ -52,12 +52,11 @@
         {% if user.is_authenticated %}
               <div class="container">
                   <h3>Your Routes</h3>
-                  <h4>El usuari connectat es --> {{ user.username }}</h4>
                   {% for route in routes %}
                   <div>
                       {% if user == route.user %}
                         <li><a href="{% url 'main:route_detail' route.id %}">
-                            {{ route.id }}</a></li>
+                            {{ route.id }}</a> (<a class="edit-button" href="{% url 'main:route_edit' route.id %}">edit</a>)</li>
 
                       {% endif %}
                   </div>
