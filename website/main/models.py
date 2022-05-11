@@ -41,8 +41,8 @@ class Route(Model):
 
     id = models.CharField(max_length=20, unique=True, primary_key=True)
     id_vehicle = models.ForeignKey(Transport, on_delete=models.CASCADE, default=0)
-    start_point = models.CharField(max_length=20, choices=PLACES)
-    end_point = models.CharField(max_length=20, choices=PLACES)
+    start_point = models.CharField(max_length=20, blank=True, null=True)
+    end_point = models.CharField(max_length=20, blank=True, null=True)
     start_time = models.DateTimeField(auto_now_add=True, blank=True)
     km = models.IntegerField()
     user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)

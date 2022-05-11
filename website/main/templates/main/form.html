@@ -13,7 +13,75 @@
 </style>
 
     <div class="container">
-        <h4>Crete New Route</h4>
+        <h4>Create New Route</h4>
+    <script>
+        $(function() {
+            $("#id_start_point").autocomplete({
+                source: function( request, response ) {
+                    $.ajax({
+                        url: "https://secure.geonames.org/search",
+                        dataType: "jsonp",
+                        data: {
+                            featureClass: "R",
+                            fcode: "ST",
+                            country: "ES",
+                            type: "json",
+                            maxRows: 10,
+                            name_startsWith: request.term,
+                            username: "paute"
+                        },
+                        success: function( data ) {
+                            response( $.map( data.geonames, function( item ) {
+                                return {
+                                    label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
+                                    value: item.name,
+                                }
+                            }));
+                        }
+                    });
+                },
+                minLength: 2,
+                select: function( event, ui ) {
+                    if (ui.item) {
+                        $("#id_start_point").val(ui.item.name);
+                    }
+                }
+            });
+
+            $("#id_end_point").autocomplete({
+                source: function( request, response ) {
+                    $.ajax({
+                        url: "https://secure.geonames.org/search",
+                        dataType: "jsonp",
+                        data: {
+                            featureClass: "R",
+                            fcode: "ST",
+                            country: "ES",
+                            type: "json",
+                            maxRows: 10,
+                            name_startsWith: request.term,
+                            username: "paute"
+                        },
+                        success: function( data ) {
+                            response( $.map( data.geonames, function( item ) {
+                                return {
+                                    label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
+                                    value: item.name,
+                                }
+                            }));
+                        }
+                    });
+                },
+                minLength: 2,
+                select: function( event, ui ) {
+                    if (ui.item) {
+                        $("#id_end_point").val(ui.item.name);
+                    }
+                }
+            });
+        });
+    </script>
+
         <form method="post" enctype="multipart/form-data" action="">
             {% csrf_token %}
             <table>
