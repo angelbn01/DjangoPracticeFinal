@@ -37,10 +37,12 @@ If you want to know the information of the database inserted by the admin: http:
 
 # Test a client user
 So as to test clients user, you can use this creadentials at the login page:
+
 admin: user
+
 password: geiade2022
 
-When you log to the page with a client user credentials, you can see/edit their old routes already created by him and create new routes.
+When you log into the webiste with a client user credentials, you can see/edit their old routes already created by him and create new routes.
 
 
 # Heroku
