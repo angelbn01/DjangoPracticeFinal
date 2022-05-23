@@ -1,6 +1,7 @@
 {% extends "main/navbar.html" %}
 {% block title %}MyRoutes - {{ route.id }}{% endblock %}
 {% block content %}
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;800&family=Montserrat:ital,wght@0,300;1,400&display=swap');
     .container {
@@ -19,12 +20,34 @@
 </style>
 
 
-<div class="container">
-    <h3><b>&nbsp Id Route:</b> &nbsp {{ route.id }}</h3>
-    <h3>&nbsp Start Point: &nbsp {{ route.start_point }}</h3>
-    <h3>&nbsp End Point: &nbsp {{ route.end_point }}</h3>
+<div class="container" vocab="https://schema.org/" typeof="Trip">
+    <h3><b>&nbsp Id Route:</b> &nbsp <span property="name" > {{ route.id }} </span></h3>
+
+    <h3>&nbsp Start Point: </h3>
+    <span rel="itinerary" >
+        <span typeof="Place">
+            <span property="address" typeof="PostalAddress">
+                <h3><span property="streetAddress">
+                    {{ route.start_point }}
+                </span></h3>
+            </span>
+        </span>
+    </span>
+
+    <h3>&nbsp End Point: </h3>
+     <span rel="itinerary" >
+        <span typeof="Place">
+            <span property="address" typeof="PostalAddress">
+                <h3><span property="streetAddress">
+                    {{ route.end_point }}
+                </span></h3>
+            </span>
+        </span>
+    </span>
+
     <h3>&nbsp Start Time: &nbsp {{ route.start_time }}</h3>
-    <h3>&nbsp Total Distance: &nbsp {{ route.km }}km</h3>
+    <h3>&nbsp Total Distance: </h3>
+    <h3><span property="description"> {{ route.km }}km </span></h3>
     <h3></h3>
     <a class="cta" href="/home/">
         <button class="button">Back Home</button>

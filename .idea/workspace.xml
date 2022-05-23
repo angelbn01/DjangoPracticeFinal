@@ -4,10 +4,9 @@
     <list default="true" id="983b2538-bf1a-44e4-919a-20ddc0fd3cdf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/website/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/features/environments.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/features/register_route.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/features/steps/authentification.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/features/steps/register_route.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/main/templates/main/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/templates/main/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/main/templates/main/route_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/main/templates/main/route_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/website" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
